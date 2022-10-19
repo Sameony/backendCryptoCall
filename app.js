@@ -39,6 +39,9 @@ app.get("/getAll",async (req, res)=>{
     await usdData();
     res.send(usdDatata);
 })
+app.get("/", async (req, res)=>{
+    res.send("Working or smth")
+})
 app.listen(port, function(err){
     if (err) console.log(err);
     console.log("Server listening on port", port);
